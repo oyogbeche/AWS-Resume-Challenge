@@ -1,0 +1,268 @@
+root{
+    --bg_color: rgb(243, 238, 238);
+    --white-text-color: azure;
+    --highlight-color: rgb(173, 30, 30);
+    --hover-color: Yellow;
+}
+
+html {
+    background-color: var(--bg_color);
+    font-family:Poppins, sans-serif;
+}
+
+h2,
+h3 {
+    color: black;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.my_name{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+header{
+    background-color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar{
+    width: 100%;
+    margin: 0 auto;
+    color:azure;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: .10rem;
+    padding: 0px 0px;
+    line-height: 3rem;
+}
+
+nav a{
+    display: flex;
+    padding: 0rem 3rem;
+    text-decoration: none;
+    color: var(--white-text-color);
+    list-style: none;
+    display: block;
+}
+
+.navbar .nav-bar1:hover {
+    background-color: var(--highlight-color);
+}
+
+.section-profile {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    padding: 0rem 0rem;
+    border-top: 1px solid #ddd;
+    padding-left: 10%;
+}
+
+.section-profile p {
+    display:block;
+    width: 80%;
+    color: black;
+    padding-left: 0%;
+    padding-block-end: 5px;
+    line-height: 1.5;
+
+}
+
+.skillset-container {
+    border-bottom: 1px solid #ddd;
+    padding-left: 10%;
+}
+
+.skillset-container p  {
+    padding-left: 10%;
+    line-height: 1.5;
+}
+
+.skillset-container li {
+    padding-block: 2px;
+}
+
+.experience-container {
+    border-bottom: 1px solid #ddd;
+    padding-left: 10%;
+}
+
+.experience-container li {
+    padding-block: 5px;
+}
+
+.certification-container {
+    padding-left: 10%;
+    border-bottom: 1px solid #ddd;
+}
+
+.certification-container img {
+    width: 20px;
+    vertical-align: middle;
+    color: grey;
+}
+.certification-container li {
+    padding-block: 5px;
+}
+.certification-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-container {
+    padding-left: 10%;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-container img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.project-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-container span {
+    font-weight: 800;
+}
+
+.project-container li {
+    padding-block: 5px;
+}
+
+footer {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+    padding: 10px 10px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .fa-brands,
+.fa-solid {
+    padding-right: 10px;
+}
+
+footer li:hover {
+    text-decoration: underline var(--hover-color) 2px;
+}
+
+/* Tablet */
+@media (min-width: 767px) and (max-width:1023px) {
+    .section-profile {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+        padding: 0.5rem 0rem;
+        padding-inline-start: 5rem;
+    }
+    .section-profile-h1-sub-h1::before {
+        content: "\a";
+        white-space: pre;
+    }
+    .my_name {
+        font-size: 42px;
+    }
+    
+    .navbar {
+        position: fixed;
+        left: -100%;
+        top: 2.5rem;
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transform: 0.3s;
+    }
+   
+    footer ul {
+        padding: auto auto;
+    }
+    footer .footer-container ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul li {
+        list-style: none;
+        display: block;
+        padding: 2.5px 10px;
+    }
+}
+
+/* mobile */
+@media (max-width:765px) {
+    body {
+        width: 100%;
+    }
+    h2 {
+        width: 100%;
+    }
+    .section-profile p {
+        width: 95%;
+    }
+
+    .navbar {
+        width:100%;
+        left: -100%;
+        top: 2.5rem;
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transform: 0.3s;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav a {
+        padding-inline-start: 5px;
+    }
+
+    .my_name {
+        font-size: 32px;
+    }
+    .section-profile {
+        padding: 10%;
+    }
+}
