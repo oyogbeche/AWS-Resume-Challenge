@@ -21,7 +21,7 @@ jobs:
         SOURCE_DIR: 'website'
 
   invalidate-cloudfront-distribution:
-    needs: copy-website-to-s3-and-invalidate-cloudfront
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - name: Invalidate CloudFront
