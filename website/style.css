@@ -75,11 +75,12 @@ nav a{
 
 .section-profile p {
     display:block;
-    width: 80%;
+    width: 85%;
     color: black;
     padding-left: 0%;
     padding-block-end: 5px;
     line-height: 1.5;
+    text-align: justify;
 
 }
 
@@ -105,6 +106,8 @@ nav a{
 .experience-container li {
     padding-block: 5px;
     line-height: 1.5;
+    text-align: justify;
+    width: 85%;
 }
 
 .experience-container span {
