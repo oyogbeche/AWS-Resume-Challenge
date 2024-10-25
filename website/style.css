@@ -104,6 +104,11 @@ nav a{
 
 .experience-container li {
     padding-block: 5px;
+    line-height: 1.5;
+}
+
+.experience-container span {
+    font-weight: 700;
 }
 
 .certification-container {
