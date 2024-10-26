@@ -86,7 +86,7 @@
                     Utilize Auto Scaling to dynamically adjust resources based on load, ensuring seamless scaling of applications.
                 </li>
                 <li>
-                    <span>Documentation:</span> Maintain architecture diagrams using AWS Architecture Icons and store configurations and design decisions in AWS Systems Manager (Parameter Store or Document Manager). This central 
+                    <span>Documentation:</span> Maintain architecture diagrams using AWS Architecture Icons and store configurations and design decisions in AWS Systems Manager (Document Manager). This central 
                     documentation hub facilitates team collaboration and future reference.
                 </li>
                 <li>
@@ -135,12 +135,22 @@
                 <li>
                     <span>Technology Used:</span> AWS S3 Bucket, Route 53, Cloudfront, Certificate Manager, API Gateway, Lambda function, Dynamo DB, GitHub Actions.
                 </li>
-                <li>
-                    <a href="https://github.com/oyogbeche/AWS-Resume-Challenge.git" target="_blank">Project Source Code <img src="./assets/icon/link-svgrepo-com.svg"></a>
-                </li>
-                <li>
-                    <a href="https://medium.com/@oyogbeche/my-aws-cloud-resume-challenge-4f2c6e396398" >My Blog Post <img src="./assets/icon/link-svgrepo-com.svg"></a>
-                </li>
+                <li>Designed the frontend of my resume website with HTML/CSS and JavaScript for the API call 
+                    to the backend
+               </li>
+               <li>Hosted my static resume website with S3 Bucket while using CloudFront for CDN</li>
+               <li>Leveraged Route53 for DNS resolution and AWS Certificate Manager to store TLS/SSL certificates for secure HTTP connection.</li>
+               <li>I configured DynamoDB for my Database to store data and track my page views </li>
+               <li>I configured Lambda Function with Python code  as part of the backend serverless architecture to query the DynamoDB </li>
+               <li>As a best practice I configured API Gateway, so as not to expose my Database</li>
+               <li>I Implemented GitHub Actions for CI/CD </li>
+               <li>I provisioned my infrastructure using IaC with Terraform</li>
+               <li>
+                   <a href="https://github.com/oyogbeche/AWS-Resume-Challenge.git" target="_blank"> <span>Checkout my project source code</span> <img src="./assets/icon/link-svgrepo-com.svg"></a>
+               </li>
+               <li>
+                   <a href="https://medium.com/@oyogbeche/my-aws-cloud-resume-challenge-4f2c6e396398" ><span>My blog post for a more detailed breakdown</span> <img src="./assets/icon/link-svgrepo-com.svg"></a>
+               </li>
             </ul>
         </p>
     </section>
