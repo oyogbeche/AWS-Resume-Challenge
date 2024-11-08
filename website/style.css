@@ -66,6 +66,10 @@ p {
 
 }
 
+.navbar a:hover {
+    color: #ffffff;
+}
+
 .main_page div {
     margin-block-start: -30px;
     margin-inline-start: 5px;
