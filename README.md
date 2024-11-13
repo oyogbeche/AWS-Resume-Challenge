@@ -30,5 +30,5 @@
     - contains media files.
 
 
-#Blog
+# Blog
 For more details checkout my [BlogPost](https://medium.com/@oyogbeche/my-aws-cloud-resume-challenge-4f2c6e396398)
