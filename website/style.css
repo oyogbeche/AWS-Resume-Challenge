@@ -149,6 +149,10 @@ p {
         font-size: 35px;
     }
 
+    .main_page span {
+        margin-inline-start: 2px;
+    }
+
     p {
         font-size: 15px;
         margin-block-start: -20px;
