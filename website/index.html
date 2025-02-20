@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oyame Ogbeche</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./style.css" rel="stylesheet"/>
-    <script src="./index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyame Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div>
-                <a href="./index.html" class="navbar-btn-1">Home</a>
-            </div>
-            <div class="navbar2">
-                <a href="https://medium.com/@oyogbeche" target="_blank" class="nav-link">Blog</a>
-                <a href="https://github.com/oyogbeche">Projects</a>
-                <a href="./assets/icon/Oyame_Ogbeche_Resume.pdf" target="_blank" class="nav-link">Resume (pdf)</a>
-                <a class="counter_number">views</a>
-            </div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-        </nav>
-    </header>
-
-    <main class="main_page">
-        <h1>Oyame Ogbeche</h1>
-        <p>Cloud Solutions Architect <span>||</span> DevOps Engineer</p>
-        <div>
-            <a href="mailto:oyogbeche@gmail.com"><img src="./assets/icon/email-envelope-white-icon.svg" alt="mail icon"></a>
-            <a href="https://github.com/oyogbeche"><img src="./assets/icon/github.svg" alt="github icon"></a>
-            <a href="https://www.linkedin.com/in/oyameogbeche/"><img src="./assets/icon/linkedin-app.svg" alt="linkedin icon"></a>
+  <!-- Header & Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="mailto:oyogbeche@gmail.com">Mail</a></li>
+        <li><a href="https://github.com/oyogbeche" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/oyameogbeche/" target="_blank">LinkedIn</a></li>
+        <li><a href="./assets/icon/Oyame_Ogbeche_Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://medium.com/@oyogbeche" target="_blank">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="hero">
+    <h1>Oyame Ogbeche</h1>
+    <p>I am a DevOps & Cloud Engineer passionate about automation, scalable infrastructure, continuous innovation and saving cloud cost. Explore my portfolio to see my projects and insights.</p>
+  </div>
+  
+  <section>
+    <h2>My Projects</h2>
+    <p>Check out some of my work in designing and deploying cloud solutions, automating workflows, and building resilient infrastructures.</p>
+    <div class="projects-container">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="project-image"><img src="./assets/icon/containerized sports api.jpeg" height="180" width="310"></div>
+        <div class="project-info">
+          <h3>containerized NFL API</h3>
+          <p>Robust cloud architecture using Terraform, AWS, ECS and Docker for scalable deployments.</p>
+          <a href="https://github.com/oyogbeche/containerized_sports_api.git" target="_blank">View Project</a>
         </div>
-        
-    </main>
+        <div class="tooltip">See details about Cloud Infrastructure</div>
+      </div>
+      
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="project-image"><img src="./assets/icon/Oyogbeche AWS Cloud Resume Challenge (4).jpeg" height="160" width="285"></div>
+        <div class="project-info">
+          <h3>Cloud Resume Challenge</h3>
+          <p>This website you're currently viewing hosted on AWS, CI/CD for automated updates & Terraform for IAC.</p>
+          <a href="https://github.com/oyogbeche/AWS-Resume-Challenge.git" target="_blank">View Project</a>
+        </div>
+        <div class="tooltip">See details about CI/CD Pipeline</div>
+      </div>
+      
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="project-image"><img src="./assets/icon/nba_notification_workflow.jpeg" height="160" width="285"></div>
+        <div class="project-info">
+          <h3>NBA GameDay Notification Service</h3>
+          <p>Real-time NBA Gameday Notification with external API and serverless Backend.</p>
+          <a href="https://github.com/oyogbeche/nba_gameday_notification.git" target="_blank">View Project</a>
+        </div>
+        <div class="tooltip">See details about Monitoring Dashboard</div>
+      </div>
+      
+      <!-- Project Card 4 -->
+      <div class="project-card">
+        <div class="project-image"><img src="./assets/icon/nba_data_lake_architecture.jpeg" height="160" width="285"></div>
+        <div class="project-info">
+          <h3>NBA Data Lake</h3>
+          <p>NBA Data analytics pipeline to retrieve NBA data and analyze for actionable insights</p>
+          <a href="https://github.com/oyogbeche/nba-data-lake.git" target="_blank">View Project</a>
+        </div>
+        <div class="tooltip">See details about Container Orchestration</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Oyame Ogbeche. All Rights Reserved.<span class="views"></span></p>
+  </footer>
 </body>
 </html>

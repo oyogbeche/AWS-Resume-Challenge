@@ -1,188 +1,182 @@
-html{
-    background-color: rgb(12, 12, 12);
-    color: #ffffff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
+/* Reset and base styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-.navbar {
-    width:98%;
-    display: inline-flex;
-    gap: 50%;
-    margin-block-start: 2%;
-    color: rgb(185, 12, 238);
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background: #f4f4f4;
+color: #333;
 }
 
-.navbar > div {
-    padding-inline-start: 8%;
+/* Header and Navbar */
+header {
+background: #222;
+color: #fff;
+padding: 10px 0;
 }
 
-.navbar a {
-    color: rgb(185, 12, 238);
-    text-decoration: none;
-    line-height: 3rem;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+nav ul li a:hover {
+color: #ddd;
 }
 
-.navbar2 a {
-    padding-inline: 10px;
+/* Hero Section */
+.hero {
+background: linear-gradient(135deg, #6a11cb, #2575fc);
+color: #fff;
+text-align: center;
+padding: 100px 20px;
+}
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+.hero p {
+font-size: 1.2rem;
+max-width: 600px;
+margin: 0 auto;
 }
 
-.main_page {
-    margin-block-start: 220px;
-    margin-inline-start: 10%;
+/* Portfolio/Content Section */
+section {
+padding: 60px 20px;
+text-align: center;
+}
+section h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+color: #222;
+}
+section p {
+font-size: 1.1rem;
+max-width: 800px;
+margin: 0 auto 40px;
 }
 
-.main_page {
-    animation-duration: 5s ;
-    animation-name: slidein;
-    animation-timing-function: calc();
+/* Footer */
+footer {
+background: #222;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+}
+  
+  
+  
+/* Container for project cards */
+.projects-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+grid-gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
 }
 
-@keyframes slidein {
-   from {
-    margin-left: 100%;
-    width: 100%;
-
-   }
-
-   to {
-    margin-left: 10%;
-    width:100%;
-   }
+/* Project card styles */
+.project-card {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+position: relative;
+display: flex;
+flex-direction: column;
 }
 
-.main_page h1 {
-    font-size: 80px;
+.project-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+  
+.project-image {
+width: 100%;
+height: 160px;
+background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+  
+.project-card:hover .project-image::after {
+opacity: 1;
 }
 
-.main_page span{
-    color: rgb(185, 12, 238);
-    letter-spacing: -7px;
-    margin-inline-end: 5px;
+/* Project card content */
+.project-info {
+padding: 16px;
+flex-grow: 1;
+background: linear-gradient(135deg, #6a11cb, #2575fc);
 }
 
-p {
-    font-size: 30px;
-    margin-block-start: -50px;
-    color: grey;
-
+.project-info h3 {
+margin: 0 0 10px;
+font-size: 1.5rem;
+color: #fff;
+}
+  
+.project-info p {
+font-size: 1rem;
+color: #fff;
+margin-bottom: 16px;
 }
 
-.navbar a:hover {
-    color: #ffffff;
+.project-info a {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+transition: color 0.3s ease;
 }
 
-.main_page div {
-    margin-block-start: -30px;
-    margin-inline-start: 5px;
+.project-info a:hover {
+color: #232323;
 }
-.main_page a:nth-child(1) img {
-    height: 40px;
-    width: 30px;
-    padding-inline-end: 15px;
-    margin-block-end: 5px;
-}
-.main_page a:nth-child(2) img {
-    height: 50px;
-    width: 50px;
-}
-
-
-.main_page a:nth-child(3) img {
-    height: 25px;
-    width: 25px;
-    padding-block-end: 12px;
-    margin-inline-start: 15px;
+  
+/* Tooltip style if you want to display messages on hover (optional) */
+.tooltip {
+position: absolute;
+bottom: 100%;
+left: 50%;
+transform: translate(-50%, -10px);
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+padding: 6px 10px;
+border-radius: 4px;
+font-size: 0.9rem;
+white-space: nowrap;
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+pointer-events: none;
 }
 
-.main_page a > img:hover {
-    opacity: 0.8; 
-    transform: scale(1.55);
+.project-card:hover .tooltip {
+opacity: 1;
+transform: translate(-50%, 0);
 }
-
-.hamburger {
-    display: none; 
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-
-/* mobile view */
+  
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar2 {
-        display: none; /* Hide nav links initially on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 120px;
-        left: 0;
-        width: 100%;
-        background-color: rgb(12, 12, 12);
-    }
-
-    .navbar2 a {
-        text-align: center;
-        padding: 0px 0;
-    }
-    
-    .hamburger {
-        display: flex;
-    }
-
-    .navbar2.show {
-        display: flex;
-    }
-
-    .main_page {
-        margin-block-start: 150px;
-        margin-inline-start: 0px;
-        animation: unset;
-    }
-    .main_page h1 {
-        font-size: 35px;
-    }
-
-    .main_page span {
-        margin-inline-start: 2px;
-    }
-
-    p {
-        font-size: 15px;
-        margin-block-start: -20px;
-    }
-
-    .main_page div {
-        margin-block-start: -15px;
-        margin-inline-start: 0px;
-    }
-    .main_page a:nth-child(1) img {
-        height: 30px;
-        width: 20px;
-        padding-inline-end: 0px;
-        margin-block-end: 3px;
-    }
-    .main_page a:nth-child(2) img {
-        height: 35px;
-        width: 50px;
-    }
-    
-    
-    .main_page a:nth-child(3) img {
-        height: 15px;
-        width: 15px;
-        padding-block-end: 10px;
-        margin-inline-start: 0px;
-    }
-    
-    .main_page a > img:hover {
-        opacity: 0.8; 
-        transform: scale(1.55);
-    }
+.hero h1 {
+    font-size: 2.5rem;
+}
+nav ul {
+    flex-direction: column;
+    gap: 10px;
+}
 }
