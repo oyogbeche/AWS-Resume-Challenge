@@ -6,15 +6,13 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "oyogbeche-resume-terraform-state"
-    key            = "remote/terraform.tfstate"
+    bucket         = "oyogbeche-terraform-state"
+    key            = "oy-resume/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "terraform-state-locking"
     encrypt        = true
   }
 }
 
 provider "aws" {
-  profile = "oyogbeche"
   region  = "eu-west-1"
 }
